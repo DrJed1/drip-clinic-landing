@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --blue: #1d5d9b;
+  --orange: #ff241d;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  background-color: whitesmoke;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 0 0 20px 20px;
+}
+@media (max-width: 768px) {
+  .header{
+    width: 95%;
+  }
+}
+.hero {
+  margin-top: -2.5em;
+  padding: 1em 0em;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blue);
+}
+.hero-info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.hero h1 {
+  padding: 1em;
+  color: white;
+  font-weight: 400;
+  font-size: 3rem;
+  text-shadow: 1px 1px 9px grey;
+}
+.hero h2 {
+  padding: 1em;
+  color: white;
+  font-weight: 200;
+  text-shadow: 1px 1px 4px grey;
+}
+.hero-buttons {
+  padding: 1em;
+}
+.hero-buttons a button {
+  background-color: var(--orange);
+  color: white;
+  padding: 0.5em;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 1em;
+}
+.hero-img {
+  width: 30em;
+  align-self: center;
+}
+.hero-img img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 30px 0px 0px 30px;
+}
+@media (max-width: 768px) {
+  .hero{
+    flex-direction: column;
+  }
+}
+.services {
+  width: 70%;
+  margin: auto;
+}
+.services h2 {
+  text-align: center;
+  padding: 0.5em;
+}
+.services-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.services-container a button {
+  border: none;
+  background-color: var(--blue);
+  padding: 0.3em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media (max-width: 768px){
+  .services{
+    width: 95%;
+  }
+  .services-container{
+    flex-direction: column;
+  }
+}
+.problem {
+  width: 70%;
+  margin: auto;
+}
+.problem h2 {
+  text-align: center;
+  padding: 1em;
+}
+.problem-container {
+  display: flex;
+  justify-content: space-between;
+}
+.problem-img-container {
+  width: 30em;
+}
+.problem-img-container img {
+  object-fit: contain;
+  width: 100%;
+  box-shadow: -7px 7px 0px var(--blue);
+  border-radius: 0 10px 0 0;
+}
+.problem-text {
+  width: 50%;
+  align-self: center;
+  line-height: 1.5rem;
+}
+@media (max-width: 768px){
+  .problem{
+    width: 95%;
+  }
+  .problem-container{
+    flex-direction: column;
+  }
+  .problem-text{
+    width: 100%;
+  }
+}
+.benefits {
+  margin: auto;
+  width: 70%;
+  margin-bottom: 1em;
+}
+.benefits h2 {
+  text-align: center;
+  padding: 1em;
+}
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+}
+.benefits-img {
+  width: 20em;
+}
+.benefits-img img {
+  width: 100%;
+  object-fit: contain;
+  box-shadow: 7px 7px 0px var(--blue);
+  border-radius: 10px 0 0 0;
+}
+.benefits-tablet{
+  align-self: center;
+}
+.benefits-tablet ul li img {
+  vertical-align: bottom;
+  width: 1em;
+}
+.benefits-tablet ul li {
+  margin-top: 0.5em;
+}
+@media (max-width: 768px){
+  .benefits{
+    width: 95%;
+  }
+  .benefits-container{
+    flex-direction: column;
+  }
+}
+.contact {
+  background-color: var(--blue);
+  padding-bottom: 1em;
+}
+.contact h2{
+  text-align: center;
+  padding:1em;
+  color: whitesmoke;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-call{
+  border: 1px solid whitesmoke;
+  padding:2em 3em;
+  text-align: center;
+}
+.contact-call p{
+  font-size: 3rem;
+  font-weight: 200;
+  color: whitesmoke;
+}
+.contact-call a{
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.contact-social{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  width: 20%;
+}
+.contact-social a img{
+  width: 2em;
+}
+.contact-container button{
+  color:whitesmoke;
+  background-color: var(--orange);
+  border: 1px solid grey;
+  padding:0.5em;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+}
