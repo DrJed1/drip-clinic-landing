@@ -23,6 +23,7 @@
   background-color: white;
   padding: 0.5em;
   border-radius: 0 0 20px 20px;
+  font-size: 1.2rem;
 }
 @media (max-width: 768px) {
   .header{
@@ -84,7 +85,10 @@
 @media (max-width: 768px) {
   .hero{
     flex-direction: column;
-    margin-top: -4em;
+    margin-top: -4.6em;
+  }
+  .hero-buttons{
+    text-align: center;
   }
   .hero-img{
     width: 98%;
