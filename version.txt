@@ -1,2 +1,6 @@
 0.01
   web-site started
+0.04
+  removed "working cites from header"
+  remaked h2 in header - now cities there
+  remaked h1 - added medical center

@@ -14,16 +14,16 @@
 }
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 60%;
   background-color: whitesmoke;
   margin: auto;
   position: sticky;
   top: 0;
   background-color: white;
-  padding: 0.5em;
+  padding: 0.3em;
   border-radius: 0 0 20px 20px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   border:1px solid grey;
 }
 @media (max-width: 768px) {
@@ -52,7 +52,7 @@
   padding: 1em;
   color: white;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.3rem;
   text-shadow: 1px 1px 9px grey;
 }
 .hero h2 {
@@ -60,6 +60,10 @@
   color: white;
   font-weight: 200;
   text-shadow: 1px 1px 4px grey;
+}
+.hero h2 a{
+  color:whitesmoke;
+  text-decoration: underline;
 }
 .hero-buttons {
   padding: 1em;
