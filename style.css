@@ -24,10 +24,10 @@
   padding: 0.3em;
   border-radius: 0 0 20px 20px;
   font-size: 1.5rem;
-  border:1px solid grey;
+  border: 1px solid grey;
 }
 @media (max-width: 768px) {
-  .header{
+  .header {
     width: 95%;
   }
 }
@@ -60,23 +60,31 @@
   color: white;
   font-weight: 200;
   text-shadow: 1px 1px 4px grey;
+  display: flex;
+  row-gap: 0.3em;
 }
-.hero h2 a{
-  color:whitesmoke;
-  text-decoration: underline;
+.hero-info h2 button {
+  padding: 0.8em;
+  background-color: whitesmoke;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.hero-info h2 button a {
+  font-size: 1.4rem;
 }
 .hero-buttons {
   padding: 1em;
 }
-.hero-buttons a button {
+.hero-buttons button {
   background-color: var(--orange);
   color: white;
   padding: 0.5em;
   border: 1px solid grey;
   border-radius: 10px;
   font-size: 1.2rem;
-  cursor: pointer;
-  margin-right: 1em;
+}
+.hero-buttons button a{
+  color:white;
 }
 .hero-img {
   width: 30em;
@@ -88,20 +96,23 @@
   border-radius: 30px 0px 0px 30px;
 }
 @media (max-width: 768px) {
-  .hero{
+  .hero {
     flex-direction: column;
     margin-top: -4.6em;
   }
-  .hero h1{
-    margin-top:1em;
+  .hero h1 {
+    margin-top: 1em;
   }
-  .hero-buttons{
+  .hero h2 {
+    flex-direction: column;
+  }
+  .hero-buttons {
     text-align: center;
   }
-  .hero-img{
+  .hero-img {
     width: 98%;
   }
-  .hero-img img{
+  .hero-img img {
     border-radius: 4px 4px 4px 4px;
   }
 }
@@ -124,14 +135,14 @@
   border-radius: 10px;
   cursor: pointer;
 }
-@media (max-width: 768px){
-  .services{
+@media (max-width: 768px) {
+  .services {
     width: 95%;
   }
-  .services-container{
+  .services-container {
     flex-direction: column;
     align-items: center;
-    gap:1em;
+    gap: 1em;
   }
 }
 .problem {
@@ -160,18 +171,18 @@
   align-self: center;
   line-height: 1.5rem;
 }
-@media (max-width: 768px){
-  .problem{
+@media (max-width: 768px) {
+  .problem {
     width: 95%;
   }
-  .problem-container{
+  .problem-container {
     flex-direction: column;
   }
-  .problem-img-container{
+  .problem-img-container {
     width: 97%;
-    margin-bottom:1em;
+    margin-bottom: 1em;
   }
-  .problem-text{
+  .problem-text {
     width: 100%;
   }
 }
@@ -197,7 +208,7 @@
   box-shadow: 7px 7px 0px var(--blue);
   border-radius: 10px 0 0 0;
 }
-.benefits-tablet{
+.benefits-tablet {
   align-self: center;
 }
 .benefits-tablet ul li img {
@@ -207,28 +218,28 @@
 .benefits-tablet ul li {
   margin-top: 0.5em;
 }
-@media (max-width: 768px){
-  .benefits{
+@media (max-width: 768px) {
+  .benefits {
     width: 95%;
   }
-  .benefits-container{
+  .benefits-container {
     flex-direction: column;
   }
-  .benefits-img{
+  .benefits-img {
     width: 95%;
   }
-  .benefits-tablet{
+  .benefits-tablet {
     align-self: flex-start;
-    margin-bottom:1em;
+    margin-bottom: 1em;
   }
 }
 .contact {
   background-color: var(--blue);
   padding-bottom: 1em;
 }
-.contact h2{
+.contact h2 {
   text-align: center;
-  padding:1em;
+  padding: 1em;
   color: whitesmoke;
 }
 .contact-container {
@@ -236,47 +247,47 @@
   flex-direction: column;
   align-items: center;
 }
-.contact-call{
+.contact-call {
   border: 1px solid whitesmoke;
-  padding:2em 3em;
+  padding: 2em 3em;
   text-align: center;
 }
-.contact-call p{
+.contact-call p {
   font-size: 3rem;
   font-weight: 200;
   color: whitesmoke;
 }
-.contact-call a{
+.contact-call a {
   color: whitesmoke;
   font-size: 2rem;
   font-weight: 500;
 }
-.contact-social{
+.contact-social {
   display: flex;
   justify-content: space-between;
   padding: 0.5em;
   width: 20%;
 }
-.contact-social a img{
+.contact-social a img {
   width: 2em;
 }
-.contact-container button{
-  color:whitesmoke;
+.contact-container button {
+  color: whitesmoke;
   background-color: var(--orange);
   border: 1px solid grey;
-  padding:0.5em;
+  padding: 0.5em;
   font-size: 1.2em;
   border-radius: 10px;
   cursor: pointer;
 }
-@media (max-width: 768px){
-  .contact-call p{
+@media (max-width: 768px) {
+  .contact-call p {
     font-size: 2rem;
   }
-  .contact-call a{
+  .contact-call a {
     font-size: 1.5rem;
   }
 }
-.footer{
+.footer {
   text-align: center;
 }
