@@ -8,3 +8,5 @@
   changed title
 0.05
   added cites buttons and links
+0.05a
+  google analys added
