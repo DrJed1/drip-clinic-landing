@@ -10,3 +10,5 @@
   added cites buttons and links
 0.05a
   google analys added
+0.05b
+  google tag added
