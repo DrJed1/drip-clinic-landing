@@ -12,3 +12,5 @@
   google analys added
 0.05b
   google tag added
+0.05c
+  domain changed
