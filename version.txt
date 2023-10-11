@@ -16,3 +16,5 @@
   domain changed
 0.05d
   changed tags and analytics
+0.06
+  removed cites
