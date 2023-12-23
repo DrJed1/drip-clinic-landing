@@ -18,3 +18,5 @@
   changed tags and analytics
 0.06
   removed cites
+0.07
+  added ua version

@@ -14,7 +14,7 @@
 }
 .header {
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   width: 60%;
   background-color: whitesmoke;
   margin: auto;
@@ -31,8 +31,15 @@
     width: 95%;
   }
 }
+.lang{
+  display: inline-block;
+  font-size: 16px;
+}
+.lang a{
+  display: block;
+}
 .hero {
-  margin-top: -2.8em;
+  margin-top: -4.8em;
   padding: 1em 0em;
   height: auto;
   display: flex;
