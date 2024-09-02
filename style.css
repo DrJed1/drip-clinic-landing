@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-:root {
-  --blue: #1d5d9b;
-  --orange: #ff241d;
-}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,85 +11,95 @@
 }
 .header {
   display: flex;
-  justify-content:space-around;
-  width: 60%;
+  justify-content: space-around;
+  align-items: center;
   background-color: whitesmoke;
-  margin: auto;
-  position: sticky;
-  top: 0;
-  background-color: white;
-  padding: 0.3em;
-  border-radius: 0 0 20px 20px;
+  height: 10vh;
   font-size: 1.5rem;
   border: 1px solid grey;
 }
-@media (max-width: 768px) {
-  .header {
-    width: 95%;
+.header-phone-num {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-right: 5em;
+}
+
+#lang {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 30px;
+  background-color: grey;
+  align-items: center;
+  width: 92px;
+  cursor: pointer;
+}
+#langRU {
+  background-color: whitesmoke;
+  border-radius: 30px;
+  padding: 0.2em 0.3em;
+  transition: 0.2s;
+}
+#langUA {
+  background-color: whitesmoke;
+  border-radius: 30px;
+  padding: 0.2em 0.3em;
+  transition: 0.2s;
+}
+@media (max-width: 800px) {
+  .logo img{
+    width:120px;
+  }
+  .header-phone-num{
+    margin:0;
+  }
+  .header-phone-num a{
+    font-size: 16px;
   }
 }
-.lang{
-  display: inline-block;
-  font-size: 16px;
-}
-.lang a{
-  display: block;
-}
+
 .hero {
-  margin-top: -4.8em;
-  padding: 1em 0em;
-  height: auto;
+  height: 87vh;
   display: flex;
-  justify-content: space-between;
-  background-color: var(--blue);
-  border-radius: 0px 0px 10px 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #1c3551;
+  background-image: url(/img/bg-v7.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .hero-info {
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-grow: 2;
   color: white;
 }
-.hero h1 {
+.hero p {
   padding: 1em;
   color: white;
   font-weight: 400;
   font-size: 2.3rem;
-  text-shadow: 1px 1px 9px grey;
+  text-shadow: 1px 1px 2px grey;
   text-align: center;
-}
-.hero h2 {
-  padding: 1em;
-  color: white;
-  font-weight: 200;
-  text-shadow: 1px 1px 4px grey;
-  display: flex;
-  row-gap: 0.3em;
-}
-.hero-info h2 button {
-  padding: 0.8em;
-  background-color: whitesmoke;
-  border: 1px solid grey;
-  border-radius: 5px;
-}
-.hero-info h2 button a {
-  font-size: 1.4rem;
 }
 .hero-buttons {
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
-.hero-buttons button {
+.hero-buttons a {
   background-color: var(--orange);
   color: white;
-  padding: 0.5em;
-  border: 1px solid grey;
+  padding: 1em 2em;
+  border: 2px solid #a83535;
   border-radius: 10px;
   font-size: 1.2rem;
-}
-.hero-buttons button a{
-  color:white;
+  background-color: #a83535;
+  text-align: center;
 }
 .hero-img {
   width: 30em;
@@ -103,32 +110,14 @@
   width: 100%;
   border-radius: 30px 0px 0px 30px;
 }
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    margin-top: -4.6em;
-  }
-  .hero h1 {
-    margin-top: 1em;
-  }
-  .hero h2 {
-    flex-direction: column;
-  }
-  .hero-buttons {
-    text-align: center;
-  }
-  .hero-img {
-    width: 98%;
-  }
-  .hero-img img {
-    border-radius: 4px 4px 4px 4px;
-  }
+@media (max-width: 1000px) {
 }
 .services {
+  flex-grow: 1;
   width: 70%;
   margin: auto;
 }
-.services h2 {
+.services p {
   text-align: center;
   padding: 0.5em;
 }
@@ -136,15 +125,13 @@
   display: flex;
   justify-content: space-evenly;
 }
-.services-container a button {
-  border: none;
-  background-color: var(--blue);
-  padding: 0.3em;
-  border-radius: 10px;
+.services-container a img {
+  height: 75px;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .services {
+    height: auto;
     width: 95%;
   }
   .services-container {
@@ -153,149 +140,7 @@
     gap: 1em;
   }
 }
-.problem {
-  width: 70%;
-  margin: auto;
-}
-.problem h2 {
-  text-align: center;
-  padding: 1em;
-}
-.problem-container {
-  display: flex;
-  justify-content: space-between;
-}
-.problem-img-container {
-  width: 30em;
-}
-.problem-img-container img {
-  object-fit: contain;
-  width: 100%;
-  box-shadow: -7px 7px 0px var(--blue);
-  border-radius: 0 10px 0 0;
-}
-.problem-text {
-  width: 50%;
-  align-self: center;
-  line-height: 1.5rem;
-}
-@media (max-width: 768px) {
-  .problem {
-    width: 95%;
-  }
-  .problem-container {
-    flex-direction: column;
-  }
-  .problem-img-container {
-    width: 97%;
-    margin-bottom: 1em;
-  }
-  .problem-text {
-    width: 100%;
-  }
-}
-.benefits {
-  margin: auto;
-  width: 70%;
-  margin-bottom: 1em;
-}
-.benefits h2 {
-  text-align: center;
-  padding: 1em;
-}
-.benefits-container {
-  display: flex;
-  justify-content: space-between;
-}
-.benefits-img {
-  width: 20em;
-}
-.benefits-img img {
-  width: 100%;
-  object-fit: contain;
-  box-shadow: 7px 7px 0px var(--blue);
-  border-radius: 10px 0 0 0;
-}
-.benefits-tablet {
-  align-self: center;
-}
-.benefits-tablet ul li img {
-  vertical-align: bottom;
-  width: 1em;
-}
-.benefits-tablet ul li {
-  margin-top: 0.5em;
-}
-@media (max-width: 768px) {
-  .benefits {
-    width: 95%;
-  }
-  .benefits-container {
-    flex-direction: column;
-  }
-  .benefits-img {
-    width: 95%;
-  }
-  .benefits-tablet {
-    align-self: flex-start;
-    margin-bottom: 1em;
-  }
-}
-.contact {
-  background-color: var(--blue);
-  padding-bottom: 1em;
-}
-.contact h2 {
-  text-align: center;
-  padding: 1em;
-  color: whitesmoke;
-}
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact-call {
-  border: 1px solid whitesmoke;
-  padding: 2em 3em;
-  text-align: center;
-}
-.contact-call p {
-  font-size: 3rem;
-  font-weight: 200;
-  color: whitesmoke;
-}
-.contact-call a {
-  color: whitesmoke;
-  font-size: 2rem;
-  font-weight: 500;
-}
-.contact-social {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5em;
-  width: 20%;
-}
-.contact-social a img {
-  width: 2em;
-}
-.contact-container button {
-  color: whitesmoke;
-  background-color: var(--orange);
-  border: 1px solid grey;
-  padding: 0.5em;
-  font-size: 1.2em;
-  border-radius: 10px;
-  cursor: pointer;
-}
-@media (max-width: 768px) {
-  .contact-call p {
-    font-size: 2rem;
-  }
-  .contact-call a {
-    font-size: 1.5rem;
-  }
-}
 .footer {
+  height: 3vh;
   text-align: center;
 }
