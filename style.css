@@ -92,7 +92,6 @@
   gap: 1em;
 }
 .hero-buttons a {
-  background-color: var(--orange);
   color: white;
   padding: 1em 2em;
   border: 2px solid #a83535;
@@ -100,6 +99,12 @@
   font-size: 1.2rem;
   background-color: #a83535;
   text-align: center;
+  transition: 0.3s;
+}
+
+.hero-buttons a:hover{
+  color:black;
+  background-color: whitesmoke;
 }
 .hero-img {
   width: 30em;
@@ -140,7 +145,7 @@
     gap: 1em;
   }
 }
-.footer {
+#footer{
   height: 3vh;
   text-align: center;
 }

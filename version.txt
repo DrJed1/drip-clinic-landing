@@ -26,3 +26,7 @@
   numbers changed places
 1.0
   total rebuild
+1.01
+  added hover
+  added getFullYear
+  minor grammar fix
