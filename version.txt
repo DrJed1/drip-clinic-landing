@@ -30,3 +30,5 @@
   added hover
   added getFullYear
   minor grammar fix
+1.01
+  main hight fix
