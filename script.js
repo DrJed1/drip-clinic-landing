@@ -17,7 +17,7 @@ document.getElementById(
 ).innerHTML = `<p>2019-${new Date().getFullYear()} All rights reserved</p>`;
 
 langUA.style.backgroundColor = "grey";
-let i = 1;
+
 
 function Japan() {
   if (i === 0) {
