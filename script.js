@@ -19,7 +19,7 @@ document.getElementById(
 langUA.style.backgroundColor = "grey";
 
 function Japan() {
-  if (window.location.href === "http://127.0.0.1:5500/ua.html") {
+  if (window.location.href === "/ua") {
     langRU.style.backgroundColor = "grey";
     langUA.style.backgroundColor = "whitesmoke";
     i++;
@@ -49,8 +49,8 @@ Japan();
 
 lang.onclick = function changeWindow(){
   if(window.location.href === 'umbrella-detox.site/ua'){
-    window.location.href = 'umbrella-detox.site'
+    window.location.href = '/'
   } else {
-    window.location.href = 'umbrella-detox.site/ua'
+    window.location.href = '/ua'
   }
 };
