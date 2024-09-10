@@ -19,7 +19,7 @@ document.getElementById(
 langUA.style.backgroundColor = "grey";
 
 function Japan() {
-  if (window.location.href === "/ua") {
+  if (i === 0) {
     langRU.style.backgroundColor = "grey";
     langUA.style.backgroundColor = "whitesmoke";
     i++;
@@ -32,8 +32,8 @@ function Japan() {
     button3.innerHTML = `<img src="/img/button3ua.png"></img>`;
     button4.innerHTML = `<img src="/img/button4ua.png"></img>`;
   } else {
-    langRU.style.backgroundColor = "whitesmoke";
     langUA.style.backgroundColor = "grey";
+    langRU.style.backgroundColor = "whitesmoke";
     i--;
     freeConsult.textContent = "Бесплатная консультация";
     mainWebsite.textContent = "Перейти на основной сайт";
@@ -47,10 +47,12 @@ function Japan() {
 }
 Japan();
 
-lang.onclick = function changeWindow(){
-  if(window.location.href === 'umbrella-detox.site/ua'){
-    window.location.href = '/'
+lang.onclick = function changeWindow() {
+  if (window.location.pathname === '/ua') {
+    window.location.href = './'
+    Japan;
   } else {
-    window.location.href = '/ua'
+    window.location.href = 'ua'
+    Japan;
   }
 };
