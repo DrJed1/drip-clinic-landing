@@ -1,1 +1,2 @@
-umbrella-detox.store
+umbrella-detox.site
+umbrella-detox.site/ua
