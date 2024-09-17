@@ -5,4 +5,4 @@ Disallow: /private/
 Disallow: /version.txt/
 Allow: /
 
-Sitemap: https://umbrella-detox.site/sitemap.txt
+Sitemap: https://umbrella-detox.space/sitemap.txt

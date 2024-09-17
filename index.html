@@ -33,29 +33,6 @@
     <title>Umbrella Detox Medical Center</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="/img/title-icon.png" type="image/x-icon" />
-    <script type="application/ld+json">
-      {
-        "@context": "http://www.schema.org",
-        "@type": "Organization",
-        "name": "Umbrella +",
-        "url": "https://umbrella-plus.com.ua/",
-        "logo": "https://umbrella-plus.com.ua/img/logo3.png",
-        "description": "Преодоление алкогольной зависимости - путь к освобождению и новой жизни. Наша компания специализируется на помощи людям с алкогольной зависимостью. Мы предлагаем персонализированные программы, разработанные опытной командой экспертов. Наш подход основан на тщательном анализе потребностей каждого клиента, а также на поддержке и помощи на всех этапах процесса. Мы верим, что каждый человек способен изменить свою жизнь к лучшему. Наша главная миссия - помочь людям преодолеть трудности зависимости, восстановить физическое и психическое здоровье, и вернуть радость и смысл жизни.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "г. Одесса Армейская 18/1"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "46.451474059475366",
-          "longitude": "30.750359186506223"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+380 (50) 021 69 57"
-        }
-      }
-    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -69,21 +46,42 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="header">
-      <div class="logo"><img src="/img/logo3.png" alt="logo" /></div>
+      <div class="logo"><img src="/img/logo-landing.png" alt="logo" /></div>
       <div class="header-phone-num">
         <a href="tel:+380973697665">+380(97) 369 76 65</a>
         <a href="tel:+380500216957">+380(50) 021 69 57</a>
       </div>
-      <div id="lang"> <a href="/ua">
-        <p id="langRU">RU</p>
-        <p id="langUA" style = "background-color: grey;">UA</p></a>
+      <div id="lang">
+        <a href="/ua">
+          <p id="langRU">RU</p>
+          <p id="langUA" style="background-color: grey">UA</p></a
+        >
       </div>
     </div>
     <div class="hero">
       <div class="hero-info">
+        <form id="tg">
+          <div class="main-consult">
+            <input
+              type="tel"
+              class="form-control"
+              name="user_phone"
+              id="user_phone"
+              placeholder="XXXXXXXX"
+              value="+380"
+              minlength="13"
+              maxlength="13"
+            /><button type="submit">Перезвоните мне</button>
+            <div id="success">
+              Сообщение отправлено! Перезвоним вам как можно скорее!
+            </div>
+          </div>
+        </form>
         <p id="freeConsult">Бесплатная консультация</p>
         <div class="hero-buttons">
-          <a href="https://umbrella-plus.com.ua" id="mainWebsite">Перейти на основной сайт</a>
+          <a href="https://umbrella-plus.com.ua" id="mainWebsite"
+            >Перейти на основной сайт</a
+          >
           <a href="tel:+380973697665" id="emergencyCall">Екстренный вызов</a>
         </div>
       </div>
@@ -91,24 +89,66 @@
       <div class="services">
         <p id="servicesTitle">Наши услуги</p>
         <div class="services-container">
-          <a
-            id="button1"
-            href="https://umbrella-plus.com.ua/kapelnitsya-ot-alc"
-          ><img src="/img/button1.png"></img></a>
-          <a
-            id="button2"
-            href="https://umbrella-plus.com.ua/kodirovanie-ot-alc"
-          ><img src="/img/button2.png"></img></a>
-          <a
-            id="button3"
-            href="https://umbrella-plus.com.ua/vivod-iz-zapoya"
-          ><img src="/img/button3.png"></img></a>
-          <a id="button4" href="https://umbrella-plus.com.ua/narc-pomoshch"><img src="/img/button4.png"></img></a>
+          <a id="button1" href="https://umbrella-plus.com.ua/kapelnitsya-ot-alc"
+            ><img src="/img/button1.png"
+          /></a>
+          <a id="button2" href="https://umbrella-plus.com.ua/kodirovanie-ot-alc"
+            ><img src="/img/button2.png"
+          /></a>
+          <a id="button3" href="https://umbrella-plus.com.ua/vivod-iz-zapoya"
+            ><img src="/img/button3.png"
+          /></a>
+          <a id="button4" href="https://umbrella-plus.com.ua/narc-pomoshch"
+            ><img src="/img/button4.png"
+          /></a>
         </div>
       </div>
+      <p id="description">
+        Мы предлагаем инновационный подход к решению проблемы прямо у вас дома.
+        Мы понимаем, что каждый человек уникален, и наши программы индивидуально
+        адаптированы под каждого клиента. Наша команда профессионалов
+        предоставляет конфиденциальную и терапевтическую поддержку, помогая
+        преодолеть препятствия на пути к здоровой и сбалансированной жизни. Ваше
+        благополучие - наш главный приоритет, и мы готовы помочь вам в этом
+        важном путешествии к выздоровлению.
+      </p>
     </div>
     <div id="footer"><p>2019-2024 All rights reserved</p></div>
   </body>
+  <script>
+    const CHAT_ID = "-913542926";
+    const URI_API =
+      "https://api.telegram.org/bot6574586981:AAHaBa0jIw2PRv6-EoCnTP0ZyWR6k6wl14Y/sendMessage";
+    let massage = "<b>Кинули заявку(Рекламная страница):</b>";
+
+    document.getElementById("tg").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (
+        document.getElementById("user_phone").value === `+380` &&
+        document.getElementById("user_phone").value.length < 13
+      ) {
+        window.alert("Введите номер телефона/Введіть номер телефону");
+      } else {
+        document.querySelector("input").style.display = "none";
+        document.querySelector(".main-consult button").style.display = "none";
+
+        massage += document.getElementById("user_phone").value;
+
+        axios
+          .post(URI_API, {
+            chat_id: CHAT_ID,
+            parse_mode: "html",
+            text: massage,
+          })
+          .then((res) => {
+            this.user_phone.value = "";
+            success.style.display = "block";
+          });
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <!-- <script>
     let i = 1;
   </script>
