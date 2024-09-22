@@ -1,2 +1,2 @@
-umbrella-detox.space
-umbrella-detox.space/ua
+umbrellaplus.site
+umbrellaplus.site/ua
