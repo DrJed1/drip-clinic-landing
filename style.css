@@ -164,7 +164,7 @@
   display: flex;
   justify-content: space-evenly;
 }
-.services-container a img {
+.services-container img {
   height: 75px;
   cursor: pointer;
 }
