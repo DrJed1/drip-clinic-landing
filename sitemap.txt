@@ -1,2 +1,2 @@
-umbrellaplus.site
-umbrellaplus.site/ua
+umbrella-plus.website
+umbrella-plus.website/ua
